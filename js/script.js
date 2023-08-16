@@ -79,7 +79,7 @@ function elevar(){
 
 function raiz(){
     var n1 = parseInt(prompt("Digite o número"))
-    var resultado =
+    var resultado = Math.sqrt(n1)
     console.log(resultado)
     alert(resultado)
 }
