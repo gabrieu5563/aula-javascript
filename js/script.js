@@ -82,3 +82,20 @@ function raiz(){
     console.log(resultado)
     alert(resultado)
 }
+
+//var é uma variável global, qualquer função consegue indentificar. não é bom usar pois pode ocorrer interferência
+//let é a mesma coisa q var mas só funciona dentro da própria função
+//const é uma variável onde o valor não pode ser alterado
+
+function nome(){
+    const nome = document.getElementById("frmnome").value //.value pega apenas o valor dentro desse elemento
+    //usei const pq não vou mudar o nome, só vou utiliza-lo em algum outro lugar. Por isso ele pode ser uma varáivel constante pq n vai mudar.
+    console.log(nome)
+    document.getElementById("exibenome").innerHTML = nome
+}
+
+function produto(){
+    const produto = document.getElementById("frmproduto").value
+    console.log(produto)
+    document.getElementById("exibeproduto").innerHTML = produto
+}
