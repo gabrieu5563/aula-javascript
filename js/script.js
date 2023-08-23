@@ -18,7 +18,6 @@ function login(){
 function somar(){
     var n1 = parseInt(prompt("Digite o primeiro número"))
     var n2 = parseInt(prompt("Digite o segundo número"))
-    //console.log(typeof(n1))  mostra o tipo de variavel
     console.log(typeof(n1))
     console.log(typeof(n2))
     var resultado = n1+n2
