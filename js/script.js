@@ -95,7 +95,10 @@ function nome(){
 }
 
 function produto(){
-    const produto = document.getElementById("frmproduto").value
+    let produto = document.getElementById("frmproduto").value
+    let li = document.createElement("li")
+    li.innerHTML = produto
     console.log(produto)
-    document.getElementById("exibeproduto").innerHTML = produto
+    document.getElementById("produto").appendChild(li)
+    console.log(produto)
 }
