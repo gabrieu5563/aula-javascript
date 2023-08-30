@@ -84,7 +84,6 @@ function raiz(){
 }
 
 //var é uma variável global, qualquer função consegue indentificar. não é bom usar pois pode ocorrer interferência
-//let é a mesma coisa q var mas só funciona dentro da própria função
 //const é uma variável onde o valor não pode ser alterado
 
 function nome(){
@@ -94,6 +93,8 @@ function nome(){
     document.getElementById("exibenome").innerHTML = nome
 }
 
+//let é a mesma coisa q var mas só funciona dentro da própria função
+
 function produto(){
     let produto = document.getElementById("frmproduto").value
     let li = document.createElement("li")
@@ -101,4 +102,54 @@ function produto(){
     console.log(produto)
     document.getElementById("produto").appendChild(li)
     console.log(produto)
+}
+
+//array é uma variavel que pode adicionar diversos valores. tipo um vetor.
+//tudo dentr od oarray é um conjunto de elementos do mesmo tipo
+
+function array(){
+    let n = [3, 4, 5, 6, 2, 1]
+    console.log("Todos os valores do array")
+    console.log(n)
+    //para colocar valor e texto em console.log("abcde" + variavel)
+    console.log("Primeiro valor do array")
+    console.log(n[0])
+    console.log("Quarto valor do array")
+    console.log(n[3])
+    n[6] = 12
+    console.log("Setimo valor do array" + n[6])
+    console.log("Todos os valores do array")
+    console.log(n)
+    //n. mostra muitas funções de array no tab
+    n.push(38, 30, 1978)
+    console.log("Todos os valores do array")
+    console.log(n)
+    n.pop()
+    //pop tira o ultimo numero do array
+    console.log("Todos os valores do array")
+    console.log(n)
+    n.pop()
+    console.log("Todos os valores do array")
+    console.log(n)
+    n.pop()
+    console.log("Todos os valores do array")
+    console.log(n)
+    //não tem como escolher qual elemento apagar com o pop
+}
+
+function carrinho(){
+    let carrinho = ["arroz"]
+    //o arroz está entre [] pq é um array
+    let nome = "arroz"
+    let preco = 4.99
+    let marca = "tio joao"
+
+    let produto = {
+        nome_prod: "arroz",
+        preco_prod: 9.99,
+        marca_prod: "tio joao"
+    }
+    //essa estrutura é chamada de objeto. js é uma linguagem não orientada a objetos
+    console.log (produto)
+
 }
